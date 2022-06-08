@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.encabezado{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: solid rgb(102, 102, 102) 1px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.Tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
+
+.Tarjetas div{
+display: grid;
+grid-template-rows: auto auto auto;
+}
+
+.nombre-de-usuario{
+    display: inline-block;
+}
+.foto-de-perfil{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+
+.piedefotos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+span i{
+    float: right;
+}
+.Foto1{
+    border:1px solid rgb(187, 187, 187) ;
+}
+
+
+@media (max-width: 360px){
+    .Tarjetas{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    .Foto1{
+        margin-bottom: 10px;
+    }
+    .publicacion{
+        width: 315px;
+    }
+    }
